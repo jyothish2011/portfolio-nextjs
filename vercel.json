@@ -1,0 +1,13 @@
+{
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@now/next",
+        "config": { "distDir": "build" }
+      }
+    ],
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }
+  
