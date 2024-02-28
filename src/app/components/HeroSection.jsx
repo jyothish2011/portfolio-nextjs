@@ -103,7 +103,7 @@ const HeroSection = () => {
         </div>
 
         <div className="2xl:hidden xl:hidden lg:hidden md:block sm:block container flex justify-center flex-col">
-          <p className="text-[#ADB7BE] text-lg md:text-center sm:text-center max-sm:text-center mb-6 md:pt-7 pt-7">tech stack</p>
+          <p className="text-[#ADB7BE] text-lg md:text-center sm:text-center max-sm:text-center mb-6 md:pt-7 pt-7">Tech stack</p>
           <div className="flex justify-around items-center gap-12">
             <div className="flex justify-start gap-0">
               <Image src={htmlIcon} height={64} width={64} alt="html Icon" 
