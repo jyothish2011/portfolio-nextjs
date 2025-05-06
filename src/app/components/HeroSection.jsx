@@ -16,6 +16,7 @@ import bootstrapIcon from "../../../public/bootstrap-icon.svg";
 import tailwindcssIcon from "../../../public/tailwindcss-icon.svg";
 import scssIcon from "../../../public/scss-icon.svg";
 import hero from "../../../public/hero-section.svg";
+// import jyopfp from "../../../public/"
 
 const HeroSection = () => {
   return (
@@ -61,7 +62,13 @@ const HeroSection = () => {
             className="col-span-4 place-self-center mt-2 lg:mt-0"
           >
             <div className=" self-center w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative text-center">
-              <Image src={hero} height={300} width={380} alt="Icon" className="pt-20 mx-20 max-sm:mx-0" />
+              <Image
+                src="/images/jyopfp.jpeg"
+                width={320}
+                height={400}
+                className="rounded-full object-cover"
+                alt="Profile Picture"
+              />
             </div>
           </motion.div>
         </div>
@@ -76,28 +83,28 @@ const HeroSection = () => {
           <div className="flex justify-around items-center gap-8 pt-4 sm:pt-24 px-4 sm:px-10">
             <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl text pt-6">tech stack</p>
             <div className="flex justify-start gap-0 ">
-              <Image src={htmlIcon} height={64} width={64} alt="html Icon" 
-              className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-              <Image src={cssIcon} height={64} width={64} alt="Github Icon" 
-              className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out"/>
-              <Image src={jsIcon} height={64} width={64} alt="js Icon" 
-              className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
+              <Image src={htmlIcon} height={64} width={64} alt="html Icon"
+                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
+              <Image src={cssIcon} height={64} width={64} alt="Github Icon"
+                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
+              <Image src={jsIcon} height={64} width={64} alt="js Icon"
+                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
             </div>
             <div className="flex justify-start gap-2 ">
-              <Image src={reactIcon} height={64} width={64} alt="react Icon" 
-              className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out"/>
+              <Image src={reactIcon} height={64} width={64} alt="react Icon"
+                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
               <Image src={nextjsIcon} height={54} width={54} alt="nextjs Icon"
-              className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-              <Image src={nodejsIcon} height={64} width={64} alt="nodejs Icon" 
-              className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out"/>
+                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
+              <Image src={nodejsIcon} height={64} width={64} alt="nodejs Icon"
+                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
             </div>
             <div className="flex justify-start gap-2 ">
-              <Image src={bootstrapIcon} height={58} width={58} alt="bootstrap Icon" 
-              className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out"/>
-              <Image src={tailwindcssIcon} height={58} width={58} alt="tailwindcss Icon" 
-              className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out"/>
-              <Image src={scssIcon} height={58} width={58} alt="scss-icon" 
-              className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out"/>
+              <Image src={bootstrapIcon} height={58} width={58} alt="bootstrap Icon"
+                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
+              <Image src={tailwindcssIcon} height={58} width={58} alt="tailwindcss Icon"
+                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
+              <Image src={scssIcon} height={58} width={58} alt="scss-icon"
+                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
             </div>
           </div>
         </div>
@@ -106,33 +113,33 @@ const HeroSection = () => {
           <p className="text-[#ADB7BE] text-lg md:text-center sm:text-center max-sm:text-center mb-6 md:pt-7 pt-7">Tech stack</p>
           <div className="flex justify-around items-center gap-12">
             <div className="flex justify-start gap-0">
-              <Image src={htmlIcon} height={64} width={64} alt="html Icon" 
-              className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-              <Image src={cssIcon} height={64} width={64} alt="Github Icon" 
-              className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out"/>
+              <Image src={htmlIcon} height={64} width={64} alt="html Icon"
+                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
+              <Image src={cssIcon} height={64} width={64} alt="Github Icon"
+                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
               <Image src={jsIcon} height={64} width={64} alt="js Icon"
-               className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out"/>
+                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
             </div>
           </div>
           <div className="flex justify-center items-center gap-16 pt-6">
             <div className="flex justify-start gap-2 ">
-              <Image src={reactIcon} height={60} width={60} alt="react Icon" 
-              className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-              <Image src={nodejsIcon} height={58} width={58} alt="nodejs Icon" 
-              className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-              <Image src={nextjsIcon} height={50} width={50} alt="nextjs Icon" 
-              className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
+              <Image src={reactIcon} height={60} width={60} alt="react Icon"
+                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
+              <Image src={nodejsIcon} height={58} width={58} alt="nodejs Icon"
+                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
+              <Image src={nextjsIcon} height={50} width={50} alt="nextjs Icon"
+                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
 
             </div>
           </div>
           <div className="flex justify-center items-center gap-16 pt-6">
             <div className="flex justify-start gap-2 ">
-              <Image src={bootstrapIcon} height={50} width={50} alt="bootstrap Icon" 
-              className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out"/>
-              <Image src={scssIcon} height={50} width={50} alt="scss-icon" 
-              className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out"/>
-              <Image src={tailwindcssIcon} height={58} width={58} alt="tailwindcss Icon" 
-              className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
+              <Image src={bootstrapIcon} height={50} width={50} alt="bootstrap Icon"
+                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
+              <Image src={scssIcon} height={50} width={50} alt="scss-icon"
+                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
+              <Image src={tailwindcssIcon} height={58} width={58} alt="tailwindcss Icon"
+                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
             </div>
           </div>
         </div>
