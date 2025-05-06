@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import jyopfp from "../../../public/jyopfp.svg";
 import htmlIcon from "../../../public/html-5-icon.svg";
 import cssIcon from "../../../public/css-3-icon.svg";
 import jsIcon from "../../../public/js-icon.svg";
@@ -15,7 +16,7 @@ import nodejsIcon from "../../../public/nodejs-icon.svg";
 import bootstrapIcon from "../../../public/bootstrap-icon.svg";
 import tailwindcssIcon from "../../../public/tailwindcss-icon.svg";
 import scssIcon from "../../../public/scss-icon.svg";
-import hero from "../../../public/hero-section.svg";
+// import hero from "../../../public/hero-section.svg";
 // import jyopfp from "../../../public/"
 
 const HeroSection = () => {
@@ -62,13 +63,16 @@ const HeroSection = () => {
             className="col-span-4 place-self-center mt-2 lg:mt-0"
           >
             <div className=" self-center w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative text-center">
-              <Image
+              {/* <Image
                 src="/images/jyopfp.jpeg"
                 width={320}
                 height={400}
                 className="rounded-full object-cover"
                 alt="Profile Picture"
-              />
+              /> */}
+              <Image src={jyopfp} alt="jyopfp" width={320}
+                height={400} className="rounded-full object-cover" />
+
             </div>
           </motion.div>
         </div>
