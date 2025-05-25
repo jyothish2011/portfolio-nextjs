@@ -105,3 +105,28 @@ body {
 .hero-img{
   background-image: url(/hero.png)
 }
+.marquee {
+  height: 100px; /* adjust as needed */
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 3rem;
+  width: max-content;
+  animation: marquee 15s linear infinite;
+}
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+

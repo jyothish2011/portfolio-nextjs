@@ -7,8 +7,9 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "traveller portfolio",
-    description: "its aparallex concept",
+    title: "Traveller portfolio",
+    description: "A portfolio website with a parallax effect",
+    TechStack: "HTML, CSS, JavaScript",
     image: "/images/projects/parallex.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -17,7 +18,8 @@ const projectsData = [
   {
     id: 2,
     title: "E-commerce Application ",
-    description: "pure javascript function",
+    description: "Simple CRUD application with a music player",
+    TechStack: "HTML, CSS, JavaScript",
     image: "/images/projects/music.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -25,13 +27,34 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Task update application",
-    description: "redux function and UI are build in bootstrap-4",
+    title: "Task Update Application",
+    description: "Implemented Redux for state management to update tasks, add new tasks, and delete tasks and bootstrap for UI.",
+    TechStack: "HTML, CSS, JavaScript, React, Redux, bootstrap",
     image: "/images/projects/redux.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
+  {
+    id: 4,
+    title: "Food Ordering Application",
+    description: "A food ordering application with a responsive design and a simple UI.",
+    TechStack: "HTML, CSS, JavaScript, React, Tailwind CSS, JSON ",
+    image: "/images/projects/FoodOrder.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 5,
+    title: "Chat Application",
+    description: "A MERN stack real-time chat application using WebSocket (Socket.io), React, Redux, Node.js, MongoDB, and TailwindCSS.",
+    TechStack: "MongoDB, Express, React, Node.js, Redux, TailwindCSS, Socket.io",
+    image: "/images/projects/chatapp.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "/",
+  }
 ];
 
 const ProjectsSection = () => {
@@ -72,6 +95,7 @@ const ProjectsSection = () => {
               key={project.id}
               title={project.title}
               description={project.description}
+              TechStack={project.TechStack}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}

@@ -16,35 +16,35 @@ import nodejsIcon from "../../../public/nodejs-icon.svg";
 import bootstrapIcon from "../../../public/bootstrap-icon.svg";
 import tailwindcssIcon from "../../../public/tailwindcss-icon.svg";
 import scssIcon from "../../../public/scss-icon.svg";
+import reduxIcon from "../../../public/redux.svg";
+import tsIcon from "../../../public/typescript-icon.svg";
+import gitIcon from "../../../public/git-icon.svg";
+import mongodbjsIcon from "../../../public/mongodb-icon.svg";
 // import hero from "../../../public/hero-section.svg";
 // import jyopfp from "../../../public/"
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-2 mx-auto ">
-      <div className="grid grid-cols-2 max-sm:grid-cols-1 ">
+    <section className="lg:py-12 mx-auto px-2 sm:px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
+            className="place-self-center text-center md:text-left"
           >
-            <div className="pt-10 px-6">
-              <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-[4rem] lg:leading-tight font-extrabold">
-                {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-                  Front-End React Developer
-                </span> */}
+            <div className="pt-10 px-2 sm:px-6">
+              <h1 className="text-white mb-4 text-3xl sm:text-4xl lg:text-[4rem] lg:leading-tight font-extrabold">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 shadow-md">
                   Front-End React Developer
                 </span>
-
-                <br></br>
+                <br />
               </h1>
               <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
                 Hi, I'm Jyothishwar Muthukumar. A passionate Front-end React Developer based in chennai, India. 📍
               </p>
-              <div className="socials flex flex-row gap-2">
+              <div className="socials flex flex-row gap-2 justify-center md:justify-start">
                 <Link href="https://github.com/jyothish2011">
                   <Image src={GithubIcon} alt="Github Icon" />
                 </Link>
@@ -55,24 +55,15 @@ const HeroSection = () => {
             </div>
           </motion.div>
         </div>
-        <div>
+        <div className="flex justify-center items-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="col-span-4 place-self-center mt-2 lg:mt-0"
+            className="mt-2 lg:mt-0"
           >
-            <div className=" self-center w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative text-center">
-              {/* <Image
-                src="/images/jyopfp.jpeg"
-                width={320}
-                height={400}
-                className="rounded-full object-cover"
-                alt="Profile Picture"
-              /> */}
-              <Image src={jyopfp} alt="jyopfp" width={320}
-                height={400} className="rounded-full object-cover" />
-
+            <div className="w-[180px] h-[180px] sm:w-[250px] sm:h-[250px] lg:w-[400px] lg:h-[400px] relative text-center mx-auto">
+              <Image src={jyopfp} alt="jyopfp" width={320} height={400} className="rounded-full object-cover w-full h-full" />
             </div>
           </motion.div>
         </div>
@@ -81,69 +72,40 @@ const HeroSection = () => {
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-      // className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
       >
-        <div className="2xl:flex 2xl:justify-center 2xl:flex-col xl:flex xl:justify-center xl:flex-col lg:flex lg:justify-center lg:flex-col md:hidden  max-sm:hidden sm:hidden">
-          <div className="flex justify-around items-center gap-8 pt-4 sm:pt-24 px-4 sm:px-10">
-            <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl text pt-6">tech stack</p>
-            <div className="flex justify-start gap-0 ">
-              <Image src={htmlIcon} height={64} width={64} alt="html Icon"
-                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-              <Image src={cssIcon} height={64} width={64} alt="Github Icon"
-                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-              <Image src={jsIcon} height={64} width={64} alt="js Icon"
-                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-            </div>
-            <div className="flex justify-start gap-2 ">
-              <Image src={reactIcon} height={64} width={64} alt="react Icon"
-                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-              <Image src={nextjsIcon} height={54} width={54} alt="nextjs Icon"
-                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-              <Image src={nodejsIcon} height={64} width={64} alt="nodejs Icon"
-                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-            </div>
-            <div className="flex justify-start gap-2 ">
-              <Image src={bootstrapIcon} height={58} width={58} alt="bootstrap Icon"
-                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-              <Image src={tailwindcssIcon} height={58} width={58} alt="tailwindcss Icon"
-                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-              <Image src={scssIcon} height={58} width={58} alt="scss-icon"
-                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-            </div>
-          </div>
-        </div>
+        <div className="flex py-8 sm:py-12 justify-center items-center text-lg font-semibold text-gray-300">Tech Stack</div>
+        <div className="overflow-x-hidden w-full">
+          <div className="marquee min-w-[700px] flex items-center">
+            <div className="marquee-content flex gap-4">
+              {/* Original Icons */}
+              <Image src={htmlIcon} height={48} width={48} alt="html Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="HTML" />
+              <Image src={cssIcon} height={48} width={48} alt="css Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="CSS" />
+              <Image src={jsIcon} height={48} width={48} alt="js Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="Javascript" />
+              <Image src={tsIcon} height={44} width={44} alt="ts Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="Typescript" />
+              <Image src={reactIcon} height={48} width={48} alt="react Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="React.JS" />
+              <Image src={reduxIcon} height={40} width={40} alt="redux Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="Redux" />
+              <Image src={nextjsIcon} height={40} width={40} alt="nextjs Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="Next.JS" />
+              <Image src={nodejsIcon} height={48} width={48} alt="nodejs Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="Node.JS" />
+              <Image src={mongodbjsIcon} height={48} width={48} alt="mongodb Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="MongoDB" />
+              <Image src={bootstrapIcon} height={44} width={44} alt="bootstrap Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="Bootstrap" />
+              <Image src={tailwindcssIcon} height={44} width={44} alt="tailwindcss Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="TailwindCSS" />
+              <Image src={scssIcon} height={44} width={44} alt="scss Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="SCSS" />
+              <Image src={gitIcon} height={44} width={44} alt="git Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="Git" />
 
-        <div className="2xl:hidden xl:hidden lg:hidden md:block sm:block container flex justify-center flex-col">
-          <p className="text-[#ADB7BE] text-lg md:text-center sm:text-center max-sm:text-center mb-6 md:pt-7 pt-7">Tech stack</p>
-          <div className="flex justify-around items-center gap-12">
-            <div className="flex justify-start gap-0">
-              <Image src={htmlIcon} height={64} width={64} alt="html Icon"
-                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-              <Image src={cssIcon} height={64} width={64} alt="Github Icon"
-                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-              <Image src={jsIcon} height={64} width={64} alt="js Icon"
-                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-            </div>
-          </div>
-          <div className="flex justify-center items-center gap-16 pt-6">
-            <div className="flex justify-start gap-2 ">
-              <Image src={reactIcon} height={60} width={60} alt="react Icon"
-                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-              <Image src={nodejsIcon} height={58} width={58} alt="nodejs Icon"
-                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-              <Image src={nextjsIcon} height={50} width={50} alt="nextjs Icon"
-                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-
-            </div>
-          </div>
-          <div className="flex justify-center items-center gap-16 pt-6">
-            <div className="flex justify-start gap-2 ">
-              <Image src={bootstrapIcon} height={50} width={50} alt="bootstrap Icon"
-                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-              <Image src={scssIcon} height={50} width={50} alt="scss-icon"
-                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
-              <Image src={tailwindcssIcon} height={58} width={58} alt="tailwindcss Icon"
-                className="hover:transform hover:scale-125 transition-transform duration-300 ease-in-out" />
+              {/* Duplicate to make loop seamless */}
+              <Image src={htmlIcon} height={48} width={48} alt="html Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="HTML" />
+              <Image src={cssIcon} height={48} width={48} alt="css Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="CSS" />
+              <Image src={jsIcon} height={48} width={48} alt="js Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="Javascript" />
+              <Image src={tsIcon} height={44} width={44} alt="ts Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="Typescript" />
+              <Image src={reactIcon} height={48} width={48} alt="react Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="React.JS" />
+              <Image src={reduxIcon} height={40} width={40} alt="redux Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="Redux" />
+              <Image src={nextjsIcon} height={40} width={40} alt="nextjs Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="Next.JS" />
+              <Image src={nodejsIcon} height={48} width={48} alt="nodejs Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="Node.JS" />
+              <Image src={mongodbjsIcon} height={48} width={48} alt="mongodb Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="MongoDB" />
+              <Image src={bootstrapIcon} height={44} width={44} alt="bootstrap Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="Bootstrap" />
+              <Image src={tailwindcssIcon} height={44} width={44} alt="tailwindcss Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="TailwindCSS" />
+              <Image src={scssIcon} height={44} width={44} alt="scss Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="SCSS" />
+              <Image src={gitIcon} height={44} width={44} alt="git Icon" className="hover:scale-125 transition-transform duration-300 ease-in-out" title="Git" />
             </div>
           </div>
         </div>

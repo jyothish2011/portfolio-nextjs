@@ -2,31 +2,35 @@ import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, TechStack }) => {
   return (
-    <div>
+    <div className="flex flex-col w-full max-w-sm mx-auto">
       <div
-        className="h-52 md:h-72 rounded-t-xl relative group"
-        style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
+        className="h-48 sm:h-52 md:h-72 rounded-t-xl relative group"
+        style={{ background: `url(${imgUrl})`, backgroundSize: "cover", backgroundPosition: "center" }}
       >
-        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
+        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
           <Link
             href={gitUrl}
-            className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
+            className="h-12 w-12 sm:h-14 sm:w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link flex items-center justify-center"
           >
-            <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
+            <CodeBracketIcon className="h-8 w-8 sm:h-10 sm:w-10 text-[#ADB7BE] cursor-pointer group-hover/link:text-white" />
           </Link>
           <Link
             href={previewUrl}
-            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
+            className="h-12 w-12 sm:h-14 sm:w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link flex items-center justify-center"
           >
-            <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
+            <EyeIcon className="h-8 w-8 sm:h-10 sm:w-10 text-[#ADB7BE] cursor-pointer group-hover/link:text-white" />
           </Link>
         </div>
       </div>
-      <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
-        <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-[#ADB7BE]">{description}</p>
+      <div className="text-white rounded-b-xl mt-3 bg-[#181818] py-4 px-3 sm:py-6 sm:px-4">
+        <h5 className="text-lg sm:text-xl font-semibold mb-2">{title}</h5>
+        <p className="font-semibold text-sm sm:text-base">
+          TechStack:
+          <span className="font-medium text-[#ADB7BE] ml-1">{TechStack}</span>
+        </p>
+        <p className="text-[#ADB7BE] pt-1 text-xs sm:text-base">{description}</p>
       </div>
     </div>
   );

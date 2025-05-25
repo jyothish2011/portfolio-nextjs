@@ -45,12 +45,12 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+      className="grid grid-cols-1 md:grid-cols-2 my-12 md:my-12 py-24 gap-8 md:gap-4 relative px-4 sm:px-8"
     >
       {/* <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div> */}
-      <div className="bg-gradient-to-b from-blue-300 via-blue-600 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+      {/* <div className="bg-gradient-to-b from-blue-300 via-blue-600 to-transparent rounded-full h-60 w-60 md:h-80 md:w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div> */}
 
-      <div className="z-10">
+      <div className="z-10 mb-12 md:mb-0">
         <h5 className="text-xl font-bold text-white my-2">
           Let&apos;s Connect
         </h5>
@@ -60,16 +60,16 @@ const EmailSection = () => {
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
-        <div className="socials flex flex-row gap-2">
+        <div className="socials flex flex-row gap-4">
           <Link href="https://github.com/jyothish2011">
-            <Image src={GithubIcon} alt="Github Icon" />
+            <Image src={GithubIcon} alt="Github Icon" className="w-8 h-8" />
           </Link>
           <Link href="https://www.linkedin.com/in/jyothishwar-muthukumar-1664b0193/">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+            <Image src={LinkedinIcon} alt="Linkedin Icon" className="w-8 h-8" />
           </Link>
         </div>
       </div>
-      <div>
+      <div className="z-10">
         {emailSubmitted ? (
           <p className="text-green-500 text-sm mt-2">
             Email sent successfully!
@@ -128,7 +128,6 @@ const EmailSection = () => {
             >
               Submit
             </button>
-
           </form>
         )}
       </div>
